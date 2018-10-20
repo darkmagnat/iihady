@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "$";
+const prefix = "!";
 /////////////////////////
 ////////////////////////
 
@@ -313,10 +313,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '$help') {
+    if (message.content === '!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**($) برفكس البوت **')
+        .setDescription('**(!) برفكس البوت **')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`آلَآيّّآمِـ تًُـمِـر وُ آلَسًسًـنٌيّّنٌ قهِوُة`,"http://twitch.tv/S-F")
+client.user.setGame(`GhostsTheBest|By:LooZ`,"http://twitch.tv/S-F")
 client.user.setStatus("online")
  
 });
